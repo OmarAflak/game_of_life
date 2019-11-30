@@ -51,7 +51,7 @@ def random_board(height, width):
     return [[int(tmp[i][j] > 0.5) for j in range(width)] for i in range(height)]
 
 if __name__ == '__main__':
-    board = read_board_from_file('glider_gun.txt')
+    board = read_board_from_file('structures/glider_gun.txt')
     #board = random_board(50, 150)
     for i in range(1000):
         clear_console()
