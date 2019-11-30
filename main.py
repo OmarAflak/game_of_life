@@ -7,7 +7,7 @@ def count_neighbors(grid, i, j):
     neighbors = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
     for a, b in neighbors:
         if 0 <= i + a < len(grid) and 0 <= j + b < len(grid[0]):
-            counter += int(grid[i + a][j + b] == 1)
+            counter += grid[i + a][j + b]
     return counter
 
 def next_step(grid):
