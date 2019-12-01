@@ -47,6 +47,6 @@ if __name__ == '__main__':
     board = read_board_from_file('structures/glider_gun.txt')
     for i in range(1000):
         clear_console()
-        display_board(board, height, width, '+', ' ')
+        display_board(board, height, width, '#', ' ')
         board = next_board(board)
         sleep(0.05)
